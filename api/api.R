@@ -9,7 +9,7 @@ cors <- function(res) {
 #* @param returnTime:bool Should Time be returned.
 function(returnDate = TRUE, returnTime = TRUE){
   MyTime::returnTime(
-    returnDate = returnDate,
-    returnTime = returnTime
+    returnDate = as.logical(returnDate),
+    returnTime = as.logical(returnTime)
   )
 }
