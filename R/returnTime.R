@@ -4,7 +4,7 @@ returnTime <- function(returnDate = TRUE, returnTime = TRUE){
   }else if (returnDate){
     return(format(Sys.time(), "%d %b %Y") )
   }else if (returnTime){
-    return(format(Sys.time(), "%H:%M:%S"))
+    return(format(Sys.time(), "%d %b %Y %H:%M:%S"))
   } else{
     return("Hello")
   }
