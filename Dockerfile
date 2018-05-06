@@ -9,7 +9,7 @@ RUN apt-get update -qq && apt-get install -y \
 RUN R -e 'install.packages(c("devtools"))'
 
 RUN R -e 'devtools::install_github("trestletech/plumber")'
-RUN R -e 'devtools::install_github("eaoestergaard/MyTime")'
+RUN R -e 'devtools::install_github("eaoestergaard/myTime")'
 
 ADD /api/* /api/
 
